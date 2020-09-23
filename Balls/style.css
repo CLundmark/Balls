@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+
+
+
+
+}
+
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+
+
+
+
+}
+.wrapper{
+
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+
+}
+
+.ball{
+    background-color: crimson;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 233px;
+    left: 150px;
+    animation: bounce 0.9s infinite;
+    animation-delay: 0s;
+}
+
+.ball2{
+
+background-color: crimson;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 233px;
+    left: 280px;
+    animation: bounce 0.9s infinite;
+    animation-delay: 1s;
+}
+
+.ball3{
+
+    background-color: crimson;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 233px;
+    left: 410px;
+    animation: bounce 0.9s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes bounce{
+    10%{
+        height: 50px;
+        width: 50px;
+
+    }
+    30%{
+        height: 50px;
+        width: 40px;
+
+
+    }
+    50%{
+        height: 30px;
+        width: 57px;
+        transform: translateY(240px);
+    }
+    75%{
+
+        height: 50px;
+        width: 57px;
+
+    }
+    100%{
+
+        transform: translateY(0px);
+
+    }
+
+
+}
+
+
+.container{
+
+    width: 57px;
+    height: 50px;
+
+}
+
+.shadow{
+    background-color: rgba(8,8,8,0.3);
+    height: 10px;
+    width: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: 495px;
+    left: 144px;
+    z-index: -1;
+    animation: shrink 0.9s infinite;
+}
+
+.shadow2{
+    background-color: rgba(8,8,8,0.3);
+    height: 10px;
+    width: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: 495px;
+    left: 274px;
+    z-index: -1;
+    animation: shrink2 0.9s infinite;
+    animation-delay: 0.1s;
+}
+
+.shadow3{
+    background-color: rgba(8,8,8,0.3);
+    height: 10px;
+    width: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: 495px;
+    left: 404px;
+    z-index: -1;
+    animation: shrink3 0.9s infinite;
+    animation-delay: 0.2s;
+}
+
+@keyframes shrink{
+    50%{
+        transform:  scaleX(0.5);
+    }
+
+
+}
+
+@keyframes shrink2{
+    50%{
+        transform:  scaleX(0.5);
+    }
+
+
+}
+
+@keyframes shrink3{
+    50%{
+        transform:  scaleX(0.5);
+    }
+
+
+}
